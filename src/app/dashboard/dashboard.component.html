@@ -1,0 +1,195 @@
+<div class="container">
+    <div class="heading">
+
+    </div>
+    <div class="sort-ways">
+        <div class="item-name">
+            <h5>Books</h5>
+        </div>
+    <div class="no-books">
+        <h4 class="no-of-books">({{totalBooks}})</h4>
+    </div>
+    <input type="text" class="search" placeholder="search products..." name="search" [(ngModel)]="bookName" (change)="searchByName()">
+    
+    <div class="sort-book">
+
+        <select class="sortby" >
+            <option selected value="Relevance">Sort By Relevance</option>
+            <option value="Ascending">Price:Low to High</option>
+            <option value="Descending">Price:High to Low</option>
+        </select>
+    </div>
+    <img routerLink="/wish" src="../../assets/icons/wishlist.svg" alt="wishlist image is loading..." class="cart-image img-wishlist" >
+    <p class="cart-items">0</p>
+    <!-- <p class="cart-name">cart</p> -->
+        <img routerLink="/cart" src="../../assets/icons/cart.svg" alt="cart image is loading..." class="cart-image">
+        <p class="cart-items">({{cartLength}})</p>
+    </div>
+    <div class="book-container">
+        <div class="card card-container" *ngFor="let bookobj  book" >
+            <div class="book-image">
+                <img src="../../assets/images/book1.jpg" class="card-img-top" alt="Book Image is loading...">
+                
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">{{bookobj.bookName}}</h5>
+            <p class="card-text">{{bookobj.authorName}}</p>
+            <p class="card-text">{{bookobj.price}}</p>
+            <div class="button-container" >
+                
+                <button type="button" class="button" >Add to Bag</button>
+                 
+                
+                <button type="button" class="button wishlist" >Wishlist</button>
+                
+            </div>
+            </div>
+        </div>
+
+        <div class="card card-container" >
+            <div class="book-image">
+                <img src="../../assets/images/book2.jpg" class="card-img-top" alt="Book Image is loading...">
+                
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">Ramayana</h5>
+            <p class="card-text">by valmiki</p>
+            <p class="card-text">RS.1500</p>
+            <div class="button-container" >
+
+                <button type="button" class="button" >Add to Bag</button>
+
+    
+                <button type="button" class="button wishlist" >Wishlist</button>
+ 
+            </div>
+            </div>
+        </div>
+
+
+        <div class="card card-container" >
+            <div class="book-image">
+                <img src="../../assets/images/book3.jpg" class="card-img-top" alt="Book Image is loading...">
+                <!-- <h6 class="first-txt" >Out Of Stock</h6> -->
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">Red Star</h5>
+            <p class="card-text">by Whiteshoe</p>
+            <p class="card-text">RS.1000</p>
+            <div class="button-container" >
+
+                <button type="button" class="button" >Add to Bag</button>
+                
+                <button type="button" class="button wishlist" >Wishlist</button>
+                
+                
+
+            </div>
+            </div>
+        </div>
+
+        <div class="card card-container" >
+            <div class="book-image">
+                <img src="../../assets/images/book4.jpg" class="card-img-top" alt="Book Image is loading...">
+                <h6 class="first-txt" >Out Of Stock</h6>
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">Automatic by you</h5>
+            <p class="card-text">by me</p>
+            <p class="card-text">RS.1100</p>
+            <div class="button-container" >
+
+                <button type="button" class="button" >Add to Bag</button>
+               
+                <button type="button" class="button wishlist" >Wishlist</button>
+ </div>
+            </div>
+        </div>
+
+        <div class="card card-container" >
+            <div class="book-image">
+                <img src="../../assets/images/book5.jpg" class="card-img-top" alt="Book Image is loading...">
+                
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">spiderman</h5>
+            <p class="card-text">by man</p>
+            <p class="card-text">RS.1200</p>
+            <div class="button-container" >
+
+                <button type="button" class="button" >Add to Bag</button>
+                 
+                
+                <button type="button" class="button wishlist" >Wishlist</button>
+                 
+            </div>
+            </div>
+        </div>
+
+        <div class="card card-container" >
+            <div class="book-image">
+                <img src="../../assets/images/book6.jpg" class="card-img-top" alt="Book Image is loading...">
+                
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">World History</h5>
+            <p class="card-text">by Traveller</p>
+            <p class="card-text">RS.1200</p>
+            <div class="button-container" >
+
+                <button type="button" class="button" >Add to Bag</button>
+                
+                
+                <button type="button" class="button wishlist" >Wishlist</button>
+                
+               
+
+            </div>
+            </div>
+        </div>
+
+        <div class="card card-container" >
+            <div class="book-image">
+                <img src="../../assets/images/book7.jpg" class="card-img-top" alt="Book Image is loading...">
+                <!-- <h6 class="first-txt" >Out Of Stock</h6> -->
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">dark secrets</h5>
+            <p class="card-text">by Name</p>
+            <p class="card-text">RS.1100</p>
+            <div class="button-container" >
+
+                <button type="button" class="button" >Add to Bag</button>
+                 
+                <button type="button" class="button wishlist" >Wishlist</button>
+                
+               
+            </div>
+            </div>
+        </div>
+
+        <div class="card card-container" >
+            <div class="book-image">
+                <img src="../../assets/images/book8.jpg" class="card-img-top" alt="Book Image is loading...">
+                <!-- <h6 class="first-txt" >Out Of Stock</h6> -->
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">Elusion</h5>
+            <p class="card-text">by Musk</p>
+            <p class="card-text">RS.1000</p>
+            <div class="button-container" >
+
+                <button type="button" class="button" >Add to Bag</button>
+                 
+                
+                <button type="button" class="button wishlist" >Wishlist</button>
+                
+
+            </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
